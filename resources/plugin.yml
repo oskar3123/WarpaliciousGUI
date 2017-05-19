@@ -1,0 +1,5 @@
+name: WarpaliciousGUI
+version: 1.0.1
+authors: [oskar3123]
+main: me.oskar3123.warpaliciousgui.Main
+depend: [Warpalicious]
