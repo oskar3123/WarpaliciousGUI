@@ -12,14 +12,14 @@ public class WarpCommand implements CommandExecutor
 {
 
     private Main plugin;
-    private Strings strings;
-    private WarpHandler warpHandler;
+    //private Strings strings;
+    //private WarpHandler warpHandler;
 
     public WarpCommand(Main plugin, Strings strings, WarpHandler warpHandler)
     {
         this.plugin = plugin;
-        this.strings = strings;
-        this.warpHandler = warpHandler;
+        //this.strings = strings;
+        //this.warpHandler = warpHandler;
     }
 
     @Override

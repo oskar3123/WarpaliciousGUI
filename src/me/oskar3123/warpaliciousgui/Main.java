@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 public class Main extends JavaPlugin
 {
 
-    public static final String INV_NAME = "Warps";
+    private static final String INV_NAME = "Warps";
 
     //public Inventory inventory;
     private WarpaliciousPlugin warpalicious;

@@ -1,6 +1,5 @@
 package me.oskar3123.warpaliciousgui.events;
 
-import me.oskar3123.warpaliciousgui.Main;
 import me.oskar3123.warpaliciousgui.gui.GUIInventoryHolder;
 import nl.datdenkikniet.warpalicious.config.messages.Strings;
 import nl.datdenkikniet.warpalicious.handling.TeleportMode;
@@ -9,18 +8,19 @@ import nl.datdenkikniet.warpalicious.handling.WarpHandler;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.inventory.*;
+import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.event.inventory.InventoryDragEvent;
 import org.bukkit.inventory.InventoryHolder;
 
 public class InventoryListener implements Listener
 {
 
-    private WarpHandler handler;
+    //private WarpHandler handler;
     private Strings strings;
 
     public InventoryListener(WarpHandler handler, Strings strings)
     {
-        this.handler = handler;
+        //this.handler = handler;
         this.strings = strings;
     }
 
@@ -40,7 +40,7 @@ public class InventoryListener implements Listener
             return;
         }
 
-        Player player =(Player)event.getWhoClicked();
+        Player player = (Player) event.getWhoClicked();
 
         if (event.getSlot() < 36)
         {
